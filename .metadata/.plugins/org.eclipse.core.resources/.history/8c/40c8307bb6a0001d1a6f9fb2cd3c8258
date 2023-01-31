@@ -1,0 +1,43 @@
+package com.dorukbiyikli;
+
+public class MainProgram{ // 
+
+	
+	public static void test() {
+		System.out.println("Test yazıyorrrr");
+	}
+	public static void main(String[] args) {
+		
+		System.out.println("Hello Java 1");// ln alt satıra geçirir
+		System.out.print("Hello Java 2");
+		System.out.println("Hello Java 3");
+		System.out.println("Hello Java 4");
+		System.out.println("Hello"+" "+"Java");
+		
+//		//Değişken tanımlama
+//		int x = 4;
+//		System.out.println(x);
+		byte byteValue = 0 ; // 1 Byte yer tutar byte değişken isimlerini camelCasing yaz 
+						// local variable bu. scope'u tanımlandğı yer method içinde...		
+		byteValue= 42;
+						// Bir local değişkenin ilk değer ataması olmaksızın ekrana yazdırılamaz, kullanılamaz
+		System.out.println(byteValue);
+		byteValue=6;
+
+		short shortVal1 =30, shortVal2 = 40 ; 
+		// Büyük ilkel veritip = küçük ilkel veritip diyebiliriz ancak tersini yapamayız
+		shortVal1 = byteValue ; // olur
+		//byteValue = shortVal1 ;  olmaz
+		byteValue = (byte) shortVal1 ; // şeklinde yaparsak izin veriyo typecasting deniyor buna ama tabi byte ile saklayabilirsek sadece
+		byte ogrenciSayisi; // dogru
+		
+		byte maxURLSayisi; 
+		// yanlış tanımlamalar:
+		//byte ogrenci Sayisi;
+		//byte *ogrenciSayisi;
+		//byte öğrencisayısı;
+		//byte 1ogrenciSayısı; numaralar sona konur başa konmaz değişken isimlerinde
+		//ogrenciSayisi1=> Doğru;
+	}
+
+}

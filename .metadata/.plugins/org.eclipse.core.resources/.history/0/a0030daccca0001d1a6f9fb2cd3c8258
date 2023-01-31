@@ -1,0 +1,9 @@
+package com.dorukbiyikli;
+
+public class VeriTipleriOndalikSayilar {
+
+	public static void main(String[] args) {
+
+	}
+
+}

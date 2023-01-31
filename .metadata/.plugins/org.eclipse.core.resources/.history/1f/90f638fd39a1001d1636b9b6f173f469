@@ -1,0 +1,12 @@
+package com.dorukbiyikli;
+
+public class VeriTipleriKarakter {
+
+	public static void main(String[] args) {
+		// char 1 Byte
+		char charValue = 'A' // tek tırnak char veri tipinde 
+				System.out.println(charValue);
+
+	}
+
+}

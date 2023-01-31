@@ -1,0 +1,22 @@
+package com.dorukbiyikli;
+
+import java.util.Scanner;
+
+public class KullanicidanVeriAlmaScanner2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Lütfen adınızı yazınız: ");
+		String isim;
+		isim = input.nextLine();
+		String soyisim;
+		System.out.println("Lütfen soyadınızı yazınız: ");
+		soyisim = input.nextLine();
+		System.out.println("İsminiz : "+ isim);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.dorukbiyikli;
+
+public class VeriTipleriOndalikSayilar {
+
+	public static void main(String[] args) {
+		//float : 4 Byte
+		//Precision (noktadan sonraki hassasiyet): 7 decimal digits
+		//Bilimsel hesaplamalarda kullanırsanız veri kaybedebilirsiniz sonuç yanlış çıkabilir.
+		
+		float floatValue = 1.2f;
+		System.out.println("floatValue:" + floatValue);
+		System.out.println("float min:" + Float.MIN_VALUE);
+		System.out.println("float max:" + Float.MAX_VALUE);
+		floatValue = 22.4f ;// ondalık sayılarda default atama sağ taraf değeri 'double' olarak atar.
+	
+		double doubleValue = 1.2 ; // double 8 Byte, precision 15 decimal 
+		System.out.println("Double Min:" + Double.MIN_VALUE );
+		System.out.println("Double Max:" + Double.MAX_VALUE );
+		
+	
+	
+	
+	
+	}
+	
+
+}
