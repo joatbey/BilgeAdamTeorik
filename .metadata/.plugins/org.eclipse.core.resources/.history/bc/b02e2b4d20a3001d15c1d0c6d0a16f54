@@ -1,0 +1,17 @@
+package com.dorukbiyikli;
+
+public class DongulerFor {
+
+		public static void main(String[] args) {
+			
+		// bir şeyi n kere yazdıracaksam yapacaksam , kaç kez yaptığımı saymam lazım. bunu kontrol eden bi değişken lazım.
+			// for döngüsünde i ile j ile tutulur bu genelde isim ama yani başka bişi de olabilir.
+		for(int i = 0 ; i < 4 ; i++) {
+			System.out.println(i);
+		}
+			
+			
+			
+		
+		}
+}

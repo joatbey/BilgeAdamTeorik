@@ -1,0 +1,52 @@
+package com.dorukbiyikli;
+
+import java.util.Scanner;
+
+public class DongulerWhile {
+
+	public static void main(String[] args) {
+
+		// aslında ifdeki fordaki gibi syntax
+
+		/*
+		 * koşul içindeki kod bloğunda koşulun devam edip etmeme durumunu
+		 * değiştirebilirsiniz. for'dan farkı bu. While'da koşul tek bişi koşul
+		 * değiştirilecek kodun içinde
+		 * 
+		 * //
+		 * 
+		 * while (condition) { //kodlar }
+		 * 
+		 */
+
+		int sayi = 1;
+		while (sayi < 5) {
+			System.out.println(sayi);
+			sayi++;
+		}
+
+		// döngü kaç kere dönecek belliyse for kullanın
+		// yok değişecekse while ya da do while kullanın
+
+		/*
+		 * boolean alarmDurumu = false; while (alarmDurumu==false) { //sensör durumunu
+		 * kontrol et if(sensorSicaklik >=70) { alarmDurumu = true; } //1 sn bekle kodu
+		 * bi daha execute ederken 70i geçecek . alarmDurumu true olacak sonra while
+		 * döngüsünden çıkacak alttaki satırda alarm verme kodu çalışacak.
+		 * 
+		 * } // ALARM VER!
+		 */
+		System.out.println("************************");
+		int rakam = 1;
+		Scanner input = new Scanner(System.in);
+
+		while (rakam != 0) {
+			System.out.println(rakam + " 'n karesi: " + rakam * rakam);
+			rakam = input.nextInt();
+
+		}
+		System.err.println("ÇIKIŞ");
+
+	}
+
+}
