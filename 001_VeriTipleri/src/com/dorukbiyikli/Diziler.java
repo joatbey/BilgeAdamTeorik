@@ -6,7 +6,7 @@ public class Diziler {
 
 	public static void main(String[] args) {
 		// Bir veri tipinin multiple örnek içeren versiyonu
-		// tam sayı dizisi => { 3,5,2,23,4,6,7}
+		// tam sayı dizisi => { 3,5,2,23,4,6,7} 
 		// metin dizisi => { "ali", "veli" , "ayşe", "fatma"}
 		// nesnelerden oluşan diziler de var OOP
 		
@@ -14,12 +14,15 @@ public class Diziler {
 		//dizinin cinsi önce yazılır byte short int etc... sonra []
 		long[] dizi1 ; // bu şekilde
 		// dizileri initialize etmeden onları kullanamazsınız.
+		// burada dizi1[0] yazarsam 0 vermez hata verir.
 		dizi1 = new long[7]; // böyle memoryde ne kadar yer kullanacağını söylemek lazım
+				// new komutu ile  bir class oluşturuyorsun. stackte ismi olan bu şeyin heap içinde adresslenmesi gerekiyor initialize etmek 
 				// java arkaplanda şöyle bir şey oluşuturuyor.
 				// { 0, 0, 0, 0, 0, 0, 0 } 
-		System.out.println(dizi1[0]);
-		System.out.println(dizi1[dizi1.length-1]);
-		System.out.println("dizinin lengthi: " + (dizi1.length-1));
+		System.out.println(dizi1[0]); // ilk eleman
+		System.out.println(dizi1[dizi1.length-1]); // son eleman
+		System.out.println("dizinin lengthi: " + (dizi1.length));
+		System.out.println("dizinin son elemanının indexi: " + (dizi1.length -1));
 		System.out.println("*********");
 
 		// Dikkat: 
