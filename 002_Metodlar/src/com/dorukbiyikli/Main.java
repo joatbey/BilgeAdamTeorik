@@ -1,6 +1,7 @@
 package com.dorukbiyikli;
 
 import java.util.Random;
+import java.util.Scanner;
 
 import com.alikaya.YardimciSinif;
 
@@ -43,53 +44,71 @@ public class Main {
 
 	private static int kareAl(int sayi) {
 
-		int sonuc = sayi * sayi; // bu 'sonuc' bu methodun içinde tanımlı scopeu burası. methodun local değişkeni. ya da sayi da öyle . 
-		
+		int sonuc = sayi * sayi; // bu 'sonuc' bu methodun içinde tanımlı scopeu burası. methodun local
+									// değişkeni. ya da sayi da öyle .
+
 		return sonuc;
 
 	}
-	
-	// örnek metod: 
+
+	// örnek metod:
 	public static int randomNumber() {
 		Random random = new Random();
 		int result = random.nextInt(100);// 0dan 100e kadar random integer urettik.
 		return result;
 	}
-	
-	//örnek method: 
+
+	// örnek method:
 	// üst limiti parametre olarak alan yeni bir randomNumber methodu
 	// aynı method ismi kullanalım: bu method overloading demek.
-	public static int randomNumber (int ustLimit) {
+	public static int randomNumber(int ustLimit) {
 		Random random = new Random();
 		int result = random.nextInt(ustLimit);
 		return result;
-		
+
 	}
-	
-	// örnek : aşağıdaki işlem yanlıştır.  // çünkü parametreli bir tane varken ona gidiyordu aynı isimde ama parametrenin ismi farklı olunca 
-											// method overloading yanlış oldu 
+
+	// örnek : aşağıdaki işlem yanlıştır. // çünkü parametreli bir tane varken ona
+	// gidiyordu aynı isimde ama parametrenin ismi farklı olunca
+	// method overloading yanlış oldu
 //	public static int randomNumber (int uLimit) {
 //		Random random = new Random();
 //		int result = random.nextInt(uLimit);
 //		return result;}
 
 	// bu da method overloading değildir:
-	public static int rastegleSayiUret (int ustLimit) {
+	public static int rastegleSayiUret(int ustLimit) {
 		Random random = new Random();
 		int result = random.nextInt(ustLimit);
 		return result;
-		
+
 	}
-	
+
 //	// aşağıdaki işlem yanlıştır : nereye gideceğini bilmez 
 //	public static void randomNumber (int ustLimit) { // duplicate method diyor. ( yani void ya da int ile olması farketmiyor.) bunlar aynı method değil demiyor.
 //		// parametresi olan ve olmayan iki randomNumber methodu olsa anlayabiliyordu ... return type'ı farklı olsa da bulamıyor void ya da int diyerek...
 // 		System.out.println();
 //		
 //	}
-	
+
 	public static final void hello() {
 		System.out.println("Hello from hello method in Main.java");
+	}
+
+	public static int randomNumberV3() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lütfen bir alt limit giriniz: ");
+		int altLimit = scanner.nextInt();
+		System.out.println("Lütfen bir üst limit giriniz: ");
+		int ustLimit = scanner.nextInt();
+
+		Random random = new Random();
+		int result = random.nextInt(ustLimit - altLimit) + (altLimit); // random.nextInt(altLimit,ustLimit) da olurdu
+
+		// int result = random.nextInt(altLimit, ustLimit);
+
+		return result;
+
 	}
 
 	public static void main(String[] args) { // main method: program run edildiğinde buradan girilecek...
@@ -108,23 +127,35 @@ public class Main {
 		com.alikaya.YardimciSinif.hello(); // methodun üstüne gelip f3e basarsan oraya gider.
 		// eğer YardimciSinif public yerine protected olsaydi
 
-		// yukarda private static int kareAl(int sayi) ile tanımladığm metodu çağırıyoruz main method içinde ... aynı class içinde private çağırabilirm.
-		int matSonuc = Main.kareAl(5);// 5 parametre. Bu parametrelerin de scopeları local. 
-										//yani buradaki 5i methodun scopu içinde tutuyor. en son return ettiğinde 25i bu 5i tutmuyor.
-										// buradaki matSonuc da local ama main methodu içinde local 
-		
-		System.out.println("matSonuc: " + matSonuc );
-		System.out.println("0-100 arasında random bir sayı: "+ randomNumber()); // bu StringBuilder ile olduğu için debug burada ona gidiyor.
+		// yukarda private static int kareAl(int sayi) ile tanımladığm metodu
+		// çağırıyoruz main method içinde ... aynı class içinde private çağırabilirm.
+		int matSonuc = Main.kareAl(5);// 5 parametre. Bu parametrelerin de scopeları local.
+										// yani buradaki 5i methodun scopu içinde tutuyor. en son return ettiğinde 25i
+										// bu 5i tutmuyor.
+										// buradaki matSonuc da local ama main methodu içinde local
+
+		System.out.println("matSonuc: " + matSonuc);
+		System.out.println("0-100 arasında random bir sayı: " + randomNumber()); // bu StringBuilder ile olduğu için
+																					// debug burada ona gidiyor.
 		// bu arada Main.randomNumber
-		int randomSayi3= Main.randomNumber();
-		System.out.println("Random bir sayi 3 : "+ randomSayi3);
-		
+		int randomSayi3 = Main.randomNumber();
+		System.out.println("Random bir sayi 3 : " + randomSayi3);
+
 		// overload ettiğim methodu çağıralm, bunu bir parametre ile çağıracağız...
-		System.out.println("Random nir sayı v2 : " + randomNumber(1000)); // parametreli olunca parametreli methoda gidiyor.
-		
-		
+		System.out.println("Random nir sayı v2 : " + randomNumber(1000)); // parametreli olunca parametreli methoda
+																			// gidiyor.
+
+		{// bir local değişkenin scope'u tanımlandığı süslü parantezlerin arasıdır.
+			int x2 = 5;
+			System.out.println("x2 : " + x2);
+
+		}
+
+		// System.out.println(x2); // hata verir x2nin scopeu üstteki süslü
+		// parantezlerin içi x2 cannot be resolved to a variable
+
 		// scanner import ediyorduk ya
-		java.util.Scanner scanner; // şeklinde java kütüphanesinde (package'inda) var
+		// java.util.Scanner scanner; // şeklinde java kütüphanesinde (package'inda) var
 
 		// com.alikaya.YardimciSinif.hello2(); // The method hello2() from the type
 		// YardimciSinif is not visible
@@ -134,6 +165,42 @@ public class Main {
 		System.out.println("Hoşçakalın...");
 
 		// Main.PI = 3 ; //yapamazsın The final field Main.PI cannot be assigned der
+
+		// Soru : kullanıcının giridği alt ve üst limitler arasında bir random sayı
+		// return eden metod:
+
+		// System.out.println(randomNumberV3());
+
+		// Soru:
+		// main içinde kullanılan bir Sting ve bu String'in tekrarlanma sayısını
+		// (tamsayı) alın.
+		// Aldığı bu 2 değeri tekrarla isim bir metoda gönderin, metod gönderdiğiniz
+		// metni tekrar sayısı kadar
+		// ekrana yazsın.
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Lütfen kelimeyi giriniz: ");
+		String kelime = scanner.nextLine();
+		System.out.println("Lütfen tekrar sayısını giriniz: ");
+		int tekrarSayisi = scanner.nextInt();
+		metniTekrarla(kelime, tekrarSayisi);
+		// bu içini yazınca metniTekrarla adında method oluşturdum aşağıda otomatik...
+
+	}
+
+	// metod gönderdiğiniz metni tekrar sayısı kadar ekrana yazsın.
+
+	// böyle main içinde çağırırken basıp oluşturduğumda aşapı yani main methodun
+	// altına oluşturdu.
+	// bu önemli değil üstte de olsa aynı
+	// ama alışkanlık olarak hep aynı tarafa yapmalı
+	// genelde main methodu en alta diğerleri üste yazılır
+	
+	
+	
+	private static void metniTekrarla(String kelime, int tekrarSayisi) {
+		for (int i = 0; i < tekrarSayisi; i++) {
+			System.out.println(kelime);
+		}
 
 	}
 

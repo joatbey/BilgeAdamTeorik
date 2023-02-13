@@ -3,6 +3,15 @@ public class Main {
 	public static void main(String[] args) {
 		System.out.println("Hello JAVA");
 		
+		int x=2;
+		
+		System.out.println(++x );
+		System.out.println( x++ );
+		System.out.println(  x-- );
+		System.out.println( x++ );
+		
+		System.out.printf("%S", "AdA");
+		
 	} 
 	//ctrl+ space --> otomatik doldurma
 	//ctrl + s --> kaydetmek için
