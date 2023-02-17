@@ -6,10 +6,17 @@
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="com.alikaya.YardimciSinif2"/>
     <fullyQualifiedTypeName name="com.alikaya.YardimciSinif"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenlerTest"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenler"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Anahtar"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Dikdortgen"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.IletisimBilgileri"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Otomobil"/>
+    <fullyQualifiedTypeName name="com.alikaya.Paralelkenar"/>
 </qualifiedTypeNameHistroy>

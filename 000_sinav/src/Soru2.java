@@ -25,7 +25,7 @@ public class Soru2 {
 	public static void main(String[] args) {
 		int sayiDizisi[] = { 9, 7, 5, 3, 7, 7, 23, 18, 2, 0, 7,7 };
 		int sayiDizisi1[] = { 9, 7, 5, 3, 7,7,7,7,7, 7, 23, 18, 2, 0, 7,7 };
-		int sayiDizisi2[] = { 9, 7, 5, 3, 7, 7, 23,7,7,7,7,7,7,7,7,7,7, 18, 2, 0, 7,7 };
+		int sayiDizisi2[] = { 1,2,3,4 };
 		Sayici(sayiDizisi);
 		Sayici(sayiDizisi1);
 		Sayici(sayiDizisi2);

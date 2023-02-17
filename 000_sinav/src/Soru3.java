@@ -7,7 +7,7 @@ public class Soru3 {
 
 		for (int i = 0; i < metin.length(); i++) {
 			if (karakter == metin.charAt(i)) {
-				++tane;
+				tane++;
 			}
 		}
 		if (tane != 0) {
