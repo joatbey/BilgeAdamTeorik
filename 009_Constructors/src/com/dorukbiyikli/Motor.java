@@ -19,6 +19,8 @@ public class Motor {
 		return motorHacmi; // return this.motorHacmi ile aynı
 	}
 
+	
+	// contructor: yapıcı method...
 	public Motor(int motorHacmi, String motorNo, int yakitTuketimi) { // return tipi hep bu nesne oluğu için public
 																		// Motor Motor yazmıyor öyle uygun görmüşler...
 		// ilk nesne oluştururken hangi üye değişkenleri istersem onları yazıyorum ...
@@ -29,10 +31,11 @@ public class Motor {
 		this.setMotorHacmi(motorHacmi); // böyle yapmalı clean code işi... aynı methodu iki kere yazmak yerine
 										// çağıralım...
 		this.motorNo = motorNo; // bunun halihazırda yok mehtodu
+		
 		this.setYakitTuketimi(yakitTuketimi);
 	}
 
-	// boş constructor
+	// boş constructor 
 	public Motor() {
 
 	};

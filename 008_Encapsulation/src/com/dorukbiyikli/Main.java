@@ -47,6 +47,7 @@ public class Main {
 		
 		// 
 		System.out.println();
+		
 		System.out.println(motor1.getMotorHacmi());
 		System.out.println(otomobil1.getMotor().getMotorHacmi()); // otomobil1.motor.motorHacmi diyerek eriştirtmez çünkü private tanımladık. access modifiers kullandik.
 		//
@@ -71,6 +72,27 @@ public class Main {
 
 		System.out.println("oto2 mot hacmi: " + otomobil2.getMotor().getMotorHacmi());
 		
+		// 
+		System.out.println();
+		
+		Otomobil otomobil3 = new Otomobil(); // burada new demeden fiat egea falan diye bu set modellerini kullanamayız çünkü heapte bişi oluşmuyor new demeden... 
+		// sadece sol tarafı yazıp; dersek bu otomobil3 referansının point ettiği bi memory yok 
+		
+		otomobil3.setMarka("Fiat");
+		otomobil3.setModel("egea");
+		
+	//	otomobil3.getMotor().setYakitTuketimi(9);//java.lang.NullPointerException:
+		// henüz otomobil3.setMotor() demedik çünkü...
+		
+		otomobil3.setMotor(new Motor());
+		otomobil3.getMotor().setYakitTuketimi(8);
+		System.out.println(otomobil3.getMotor().getYakitTuketimi()); // şimdi kullanabiliriz...
+		System.out.println(otomobil3.toString());// tertemiz yazıyor hem üye değişkenleri hem bağlı nesneleri 
+		
+		// encapsulation diyince aklına:
+		// üye değişkenleri gizleriz
+		// direkt erişim değil
+		// metodlar ile erişim sağlatırım...
 		
 		
 	}

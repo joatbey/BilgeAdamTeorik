@@ -19,10 +19,13 @@ public class Otomobil {
 		this.setModel(model);
 		this.setYil(yil);
 		// motoru set edelim:
-		this.setMotor(motor);
+		this.setMotor(motor);// motor nesnesini constructorun içinde olşturduk
 		
 	}
 
+	// bu arada constructorları böyle de yapbilirsin hangi parametrelerle çağırırsan öyle olur.
+	
+	
 	
 	public Otomobil(String marka, String model) {
 		this.setMarka(marka);
@@ -35,12 +38,21 @@ public class Otomobil {
 		//super();
 		this.model = model;
 		this.yil = yil;
-		this.setMotor(motor);
+		this.setMotor(motor);// motor nesnesini constructorun içinde olşturduk
 	}
 
 
 	public Otomobil() {
 		
+	}
+
+	public Otomobil(String marka, String model, int yil, int aracinKm, int motorHacmi, String motorNo, int yakitTuketimi) {
+		this.setAracinKm(aracinKm);
+		this.setMarka(marka);
+		this.setModel(model);
+		this.setYil(yil);
+		this.motor = new Motor(motorHacmi, motorNo, yakitTuketimi); 
+		//this.setMotor(new Motor(motorHacmi, motorNo, yakitTuketimi)); üstteki satırı böyle de yazabiliriz...
 	}
 
 	public String getMarka() {

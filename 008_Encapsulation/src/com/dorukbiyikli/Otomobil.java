@@ -2,7 +2,7 @@ package com.dorukbiyikli;
 
 public class Otomobil {
 
-	public static final String ARAC_TIPI = "Kara Aracı";
+	public static final String ARAC_TIPI = "Kara Aracı"; // nesnelerin hepsinde olacak. değiştirilmesini de istemediğim için final koydum
 	
 	// Otomobil sınıfından türetilecek her bir nesnenin sahip olabileceği nesnete ait özellikler
 	//üye özellikler :
@@ -12,7 +12,9 @@ public class Otomobil {
 	private int aracinKm; // Sayisal veri tipleri 0 olarak initialize edilir.
 	private Motor motor; // Otomobil sınıfının içinde farklı bir sınıfın nesnesini (Motor sınıfının nesnesini) üye değişken olarak tutuyoruz
 	
-	
+	//üye değişkenleri private tanımlamalı , 
+	// public get - set methodları yapmalı...
+	// üye değişkenlere direkt erişimi engellemek için encapsulation
 
 	public String getMarka() {
 		return marka;
@@ -52,7 +54,7 @@ public class Otomobil {
 
 	public void setMotor(Motor motor) {
 		if(motor == null) {
-			System.out.println("otomobile null olan motor nesnesi takılmaya çalışılıyor.");
+			System.out.println("otomobil nesnesine null olan motor nesnesi eklenmeye çalışılıyor.");
 		}
 		else {
 		this.motor = motor;
@@ -65,6 +67,7 @@ public class Otomobil {
 		aracinKm += km; //this.aracinKm += km ;
 	}
 	
+	// bu da güzel bir özellik sağ tıkla source generate toString tak diye otomatik methodu oluşturuyor.
 	
 	@Override
 	public String toString() {

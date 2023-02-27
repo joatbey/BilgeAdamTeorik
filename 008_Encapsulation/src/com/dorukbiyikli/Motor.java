@@ -16,45 +16,45 @@ package com.dorukbiyikli;
  *  
  *  */
 
-
 public class Motor {
 
 	private int motorHacmi;
-	private String motorNo ="";
+	private String motorNo = "";
 	private int yakitTuketimi;
-	
+
 	public int getMotorHacmi() {
 		return motorHacmi; // return this.motorHacmi ile aynı
 	}
-	
-	public void setMotorHacmi(int motorHacmi) { // parametre olarak almış , aynı kelimetyi kullanmış , motorHacmi parametre,  this.motorHacmi üye değişken
-		if(motorHacmi>=800 && motorHacmi<=10000) {
-					this.motorHacmi = motorHacmi;
-		}
-		else {
+
+	public void setMotorHacmi(int motorHacmi) { // parametre olarak almış , aynı kelimetyi kullanmış , motorHacmi
+												// parametre, this.motorHacmi üye değişken
+		if (motorHacmi >= 800 && motorHacmi <= 10000) {
+			this.motorHacmi = motorHacmi; // parametrelerin mantıklı isimler olması lazım . o yüzden içinde de aynısını
+											// kullanıyorsak this.motorHacmi nesnenin üye deişkeni karıştırmamak için
+		} else {
 			System.out.println("Motor hacmi 800-10000 dışında girdiğiniz için otomatik olarak 800 olarak ayarlanmıştır.");
 		}
-		
+
 	}
-	
+
 	public int getYakitTuketimi() {
 		return yakitTuketimi;
 	}
-	
+
 	public void setYakitTuketimi(int yakitTuketimi) {
 		this.yakitTuketimi = yakitTuketimi;
 	}
-	
+
 	public String getMotorNo() {
 		return motorNo;
 	}
+
+	// getMotorNo var ama setMotorNo koymadık çünkü bunun değiştirilmesini
+	// istemiyoruz.
 
 	@Override
 	public String toString() {
 		return "Motor [motorHacmi=" + motorHacmi + ", motorNo=" + motorNo + ", yakitTuketimi=" + yakitTuketimi + "]";
 	}
-	
-	
-	
 
 }

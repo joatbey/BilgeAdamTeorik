@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.awt.SystemColor"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="com.alikaya.YardimciSinif2"/>
     <fullyQualifiedTypeName name="com.alikaya.YardimciSinif"/>
@@ -17,6 +16,24 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Dikdortgen"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.IletisimBilgileri"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Otomobil"/>
     <fullyQualifiedTypeName name="com.alikaya.Paralelkenar"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.OtoGaleri"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Otomobil"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.DaireBaskani"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Sekreter"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Muhendis"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Main"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.INemOlcer"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.ITermometre"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Simbo"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.ITarifSınıfGoster"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.ITarihSaatGoster"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Guvercin"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.AnkaraKedisi"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.IUcabilir"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.GoldenRetriever"/>
 </qualifiedTypeNameHistroy>
