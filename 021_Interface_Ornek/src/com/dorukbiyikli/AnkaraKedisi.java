@@ -1,6 +1,6 @@
 package com.dorukbiyikli;
 
-public class AnkaraKedisi extends Hayvan{
+public class AnkaraKedisi extends Hayvan implements IKuyrukluHayvan{
 
 	
 	
@@ -17,6 +17,11 @@ public class AnkaraKedisi extends Hayvan{
 	@Override
 	public void yemekYe() {
 		System.out.println("Kedi" + this.getAd() + " bira içiyor...");
+	}
+
+	@Override
+	public void kuyrukSalla() {
+		System.out.println(this.getAd() + " adlı kedi kuyruk sallanıyor");
 	}
 
 }

@@ -26,9 +26,6 @@
     <fullyQualifiedTypeName name="com.dorukbiyikli.Main"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.INemOlcer"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.ITermometre"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Simbo"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.ITarifSınıfGoster"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.ITarihSaatGoster"/>
@@ -36,4 +33,20 @@
     <fullyQualifiedTypeName name="com.dorukbiyikli.AnkaraKedisi"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.IUcabilir"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.GoldenRetriever"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.IKuyrukluHayvan"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyleFactory"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Ogrenci"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.util.ListIterator"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
 </qualifiedTypeNameHistroy>

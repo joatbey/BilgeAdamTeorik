@@ -1,6 +1,6 @@
 package com.dorukbiyikli;
 
-public class GoldenRetriever extends Hayvan implements IYirticiHayvan {
+public class GoldenRetriever extends Hayvan implements IYirticiHayvan , IKuyrukluHayvan {
 
 	
 	
@@ -26,6 +26,11 @@ public class GoldenRetriever extends Hayvan implements IYirticiHayvan {
 	public void saldir(String nesne) {
 		System.out.println(this.getAd()+" isimli Golden " + nesne + " ye dişleriyle saldırıyor...");		
 		
+	}
+
+	@Override
+	public void kuyrukSalla() {
+		System.out.println(this.getAd()+ "isimli köpek kuyruk sallıyor");
 	}
 
 }

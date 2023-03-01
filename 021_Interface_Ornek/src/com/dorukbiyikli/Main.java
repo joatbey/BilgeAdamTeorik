@@ -27,7 +27,18 @@ public class Main {
 
 	}
 	
-
+	public static void belirtilenSureKadarKuyrukSalla(IKuyrukluHayvan kuyrukluhayvan, int saniye) {	// IKuyrukluHayvan interfaceini implement eden kuyrukluhayvan alacak parametre olarak
+		System.out.println("\n********\n");
+		for(int i = 0 ; i<saniye;i++ ) {
+			kuyrukluhayvan.kuyrukSalla();
+			try {// surround with try-catch ile otomatik yaptık ... isletim sistemine dayalı thread ... current threadi bekletiyor...
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} // milisaniye cinsinden bekliyor...
+		}
+	}
 	
 	
 	
@@ -60,6 +71,7 @@ public class Main {
 		Kartal kartal = new Kartal();
 		Main.yirticiSaldirisi(kartal);
 		Main.yirticiSaldirisi(new GoldenRetriever("Goldie", 40, 100));
+	
   		
 		
 		System.out.println("********************");
@@ -74,6 +86,11 @@ public class Main {
 		// ikisi de önceden anlaşılan interface1 üzerinden çalışıyorsa
 		// Interface1 nesne = new AFirmaObject();      Interface1 nesne = new BFirmaObject();
 		// Bunlar interchangable olacak.
+		
+		// kuyruk salla
+		Main.belirtilenSureKadarKuyrukSalla(kedi, 7);
+		
+		
 	}
 
 }
