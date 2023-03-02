@@ -1,4 +1,4 @@
-package com.dorukbiykli.com;
+package com.dorukbiykli;
 
 public class Ogrenci implements Comparable<Ogrenci> {
 	private String ad;

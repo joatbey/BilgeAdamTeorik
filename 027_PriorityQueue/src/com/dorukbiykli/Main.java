@@ -1,4 +1,4 @@
-package com.dorukbiykli.com;
+package com.dorukbiykli;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -45,7 +45,7 @@ public class Main {
 		}
 		
 		System.out.println("*******");
-		// İçinde kendi sınıflarımızı tutabilen priority queue'lae yazmak:
+		// İçinde kendi sınıflarımızı tutabilen priority queue'lar yazmak:
 		Queue<Ogrenci> queue2 = new PriorityQueue<Ogrenci>();
 		queue2.offer(new Ogrenci("Ali",107));
 		queue2.add(new Ogrenci("Veli",105));
