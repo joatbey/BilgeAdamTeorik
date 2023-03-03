@@ -62,7 +62,7 @@ public class StringDetay {
 		// substring(baslangic index , bitis index) ==> baslangic dahil - bitis dahil degil
 		// 
 		// gets substring of a string
-		System.out.println("metnin ilk 5 karakteri: " + metin.substring(0, 7));
+		System.out.println("metnin ilk 5 karakteri: " + metin.substring(0, 6));
 
 		// metindeki java ifadesini substringle çek
 		System.out.println("javanın ilk geçtiği yer: " + metin.substring(6, 11));
@@ -185,7 +185,7 @@ public class StringDetay {
 		// contains metodu
 		// herhangi bir substringin hedef string içinde var olup olmadığını kontrol eder
 		String yeniMetin = "Hava bugün çok yağmurlu";
-		System.out.println("ağ kelimesi var mi ? "+ yeniMetin.contentEquals("ağ"));
+		System.out.println("ağ kelimesi var mi ? "+ yeniMetin.contains("ağ"));
 		
 		if(yeniMetin.contains("yağmur")) {
 			System.out.println("Hava durumunda bugun yagmur gorunuyor");

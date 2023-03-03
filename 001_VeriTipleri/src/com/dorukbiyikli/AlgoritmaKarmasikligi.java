@@ -20,6 +20,7 @@ public class AlgoritmaKarmasikligi {
 		long startTime = System.currentTimeMillis();
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("Hello");
+		System.out.println(stringBuilder);
 		for(int i = 0; i<islemAdedi; i++) {
 			stringBuilder.append(i);  // ayni memory yerinde ki sayıyı değiştiriyor index mekanizmasıyla sadece
 			}

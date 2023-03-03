@@ -52,6 +52,8 @@ public class Diziler {
 		
 		// dizi tanımlama 3. yöntem:
 		int[] arrayInt = new int[ ] {1,2,3,4,5,6,7,8,9,10};
+		System.out.println(arrayInt.toString());
+		
 		for (int i = 0 ; i< arrayInt.length ; i++) {
 			System.out.println(arrayInt[i]);
 		}

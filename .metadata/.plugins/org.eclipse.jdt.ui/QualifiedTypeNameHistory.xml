@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.awt.SystemColor"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="com.alikaya.YardimciSinif2"/>
     <fullyQualifiedTypeName name="com.alikaya.YardimciSinif"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenlerTest"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenler"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Anahtar"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Dikdortgen"/>
@@ -21,7 +17,6 @@
     <fullyQualifiedTypeName name="com.dorukbiyikli.DaireBaskani"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Sekreter"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Muhendis"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Main"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.INemOlcer"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.ITermometre"/>
@@ -50,9 +45,19 @@
     <fullyQualifiedTypeName name="com.dorukbiyikli.repository.entity.Ogretmen"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.controller.OgrenciController"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.repository.OgrenciRepository"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.repository.entity.Ogrenci"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.utility.DataBase"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.MainEnumOrnek.Mevsimler"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.UcusTipi"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.AsiriHizException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 </qualifiedTypeNameHistroy>
