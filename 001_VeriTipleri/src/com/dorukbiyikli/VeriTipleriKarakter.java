@@ -17,6 +17,7 @@ public class VeriTipleriKarakter {
 		String surname ="Kaya" ;
 		System.out.println("isim: " + name + "soyisim ");
 		
+		System.out.println( (int)charValue );
 				
 	}
 

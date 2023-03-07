@@ -30,6 +30,7 @@ public class Main {
 		// o zaman üst sınıfa gidip hayvan classındaki methodu kullanacaktı. Fakat ben
 		// abstract yaparak buna izin vermiyorum. Eğer kedi için override etmeyi
 		// yapmadıysam hata verecek.
+		
 		h.sesCikar(); // The type Kedi must implement the inherited abstract method Hayvan.sesCikar()
 		h.yemekYe();
 
@@ -42,6 +43,7 @@ public class Main {
 		kedi1.sutIc();
 		// h.sutIc();//The method sutIc() is undefined for the type Hayvan
 		// burası önemli : kedinin sutIc() methodu kediye özel.
+		
 		// Hayvan classı üzerinden Hayvan h = new Kedi("Tekir",3,35); diyince, bu h
 		// üzerinden yanlız POLYMORPHIC methodları çağırabilirsin...
 

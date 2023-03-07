@@ -38,108 +38,128 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		ArrayList<String> cars = new ArrayList<String> () ; // java1.7den önce sağ tarafa da new ArrayList<String>() ; yazmak lazımmış
+		ArrayList<String> cars = new ArrayList<String>(); // java1.7den önce sağ tarafa da new ArrayList<String>() ;
+															// yazmak lazımmış
 		cars.add("Volvo");
 		cars.add("BMW");
 		cars.add("Ford");
 		cars.add("Mazda");
-		for (int i = 0; i < cars.size() ;  i++) {
-			System.out.println(cars.get(i));
-			
+		System.out.println("iterator ile :");
+		for (Iterator iterator = cars.iterator(); iterator.hasNext();) {
+			String string = (String) iterator.next();
+			System.out.println(string);
 		}
 		System.out.println("****************");
-		
+		System.out.println("for ile :");
+
+		for (int i = 0; i < cars.size(); i++) {
+			System.out.println(cars.get(i));
+
+		}
+		System.out.println("****************");
+		System.out.println("for each ile : ");
 		for (String car : cars) {
 			System.out.println(car);
 		}
-	
-		//---------------------------------
-		
-		ArrayList<Integer> arrList = new ArrayList<> () ; // ArrayList içine primitive veri tipleri almaz. Onların yerine onların wrapper sınıfları yazılır.
+
+		// ---------------------------------
+		System.out.println("****************");
+		System.out.println("arrList e add ile e 3 7 10 3 7 10 3 10 7  ekledim. print ettim arrListi: ");
+		ArrayList<Integer> arrList = new ArrayList<>(); // ArrayList içine primitive veri tipleri almaz. Onların yerine
+														// onların wrapper sınıfları yazılır.
 		// içinde yalnızca nesne tutacak
 		// int yerinte Integer
-		//float yerine Float gibi
-		
-		arrList.add(3); // ama içine 3 yazabiliyoruz. o alıp onu bir Integer tipinde nesneye çeviriyor içinde 3 olan
+		// float yerine Float gibi
+
+		arrList.add(3); // ama içine 3 yazabiliyoruz. o alıp onu bir Integer tipinde nesneye çeviriyor
+						// içinde 3 olan
 		arrList.add(7);
 		arrList.add(10);
-	
-		System.out.println(arrList);// [3, 7, 10]
+		arrList.add(3); 
+		arrList.add(7);
+		arrList.add(10);
+		arrList.add(3); 
+		arrList.add(10);
+		arrList.add(7);
+		System.out.println(arrList);// [3, 7, 10, 3, 7, 10, 3, 10, 7]
 
-		// ArrayList'ler içinde kendi Nesnelerimizin Kullanımı : 
-		Kisi k1 = new Kisi ("John", "Smith");
-		Kisi k2 = new Kisi ();
+		// ArrayList'ler içinde kendi Nesnelerimizin Kullanımı :
+		Kisi k1 = new Kisi("John", "Smith");
+		Kisi k2 = new Kisi();
 		k2.setAd("Robert");
 		k2.setAd("Donavan");
-		Kisi k3 = new Kisi ("Ali" , "Kaya");
-		Kisi k4 = new Kisi( "At ", "Atoglu" );
-		
+		Kisi k3 = new Kisi("Ali", "Kaya");
+		Kisi k4 = new Kisi("At ", "Atoglu");
+
 		ArrayList<Kisi> kisiList = new ArrayList<>();
 		kisiList.add(k1);
 		kisiList.add(k2);
-		kisiList.add(k3);		
+		kisiList.add(k3);
 		Main.printArrayList(kisiList);
 
-		
-		kisiList.add(2, k4);//  istediğin indekse de ekleyebiliyorsun...
+		kisiList.add(2, k4);// istediğin indekse de ekleyebiliyorsun...
 		Main.printArrayList(kisiList);
-		
-		//remove : 
-		
+
+		// remove :
+
 		kisiList.remove(k2); // nesne referansı ile de kullanınabilir.
 		Main.printArrayList(kisiList);
 
 		kisiList.remove(0);// indexi kullanarak da kullanılabilir.
 		Main.printArrayList(kisiList);
-	
-		List<Kisi> kisiList2 = new ArrayList <Kisi> () ; // import java.util.List; lazım
+
+		List<Kisi> kisiList2 = new ArrayList<Kisi>(); // import java.util.List; lazım
 		// burada baştaki List daha farklı bişi
 		// interface bu detaylı sonra anlatılacak...
-		kisiList2.add(new Kisi ( "Ahmet" , "Emre")) ;
-		
-		//Main.printArrayList(kisiList2); // The method printArrayList(ArrayList<Kisi>) in the type Main is not applicable for the arguments (List<Kisi>) hatası verir
-		// yukarda methodu tanımlarken List değil de ArrayList yazdık diye . List<Kisi> kisiList2 = new ArrayList <Kisi> () ;  bun
-		
+		kisiList2.add(new Kisi("Ahmet", "Emre"));
+
+		// Main.printArrayList(kisiList2); // The method printArrayList(ArrayList<Kisi>)
+		// in the type Main is not applicable for the arguments (List<Kisi>) hatası
+		// verir
+		// yukarda methodu tanımlarken List değil de ArrayList yazdık diye . List<Kisi>
+		// kisiList2 = new ArrayList <Kisi> () ; bun
+
 		System.out.println("**********");
-		// ArrayListlerde araya ekleme : 
+		// ArrayListlerde araya ekleme :
 		List<String> l = Main.listeOlustur();
-		for (String s: l) {
+		for (String s : l) {
 			System.out.println(s);
 		}
 		Main.printArrayList(kisiList);
 		l.add(2, "asd");
-		
-		
+
 		Main.listeOlustur();
 		Main.printArrayList(kisiList);
-		
-		
-		// LINKED LIST 
+
+		// LINKED LIST
 		//
-		// ARRAY LIST hızlı random erişimi sağlar dizinin içindeki herhangi bir elemanı sabit sürede getirir
-		// Ancak ArrayListte araya eleman ekleme veya aradan eleman çıkarma gibi işlemler çok uzun vakit alır . 
-		// 
-		// LINKED LIST lerde ise araya eleman ekleme veya aradan eleman çıkarma çok daha hızlıdır.
-		// Ancak LinkedList belirli bir indexteki elemana erişim hızında ARrayListe göre çok yavaş kalır.
-		
-	
+		// ARRAY LIST hızlı random erişimi sağlar dizinin içindeki herhangi bir elemanı
+		// sabit sürede getirir
+		// Ancak ArrayListte araya eleman ekleme veya aradan eleman çıkarma gibi
+		// işlemler çok uzun vakit alır .
+		//
+		// LINKED LIST lerde ise araya eleman ekleme veya aradan eleman çıkarma çok daha
+		// hızlıdır.
+		// Ancak LinkedList belirli bir indexteki elemana erişim hızında ARrayListe göre
+		// çok yavaş kalır.
+
 		List<String> linkedList = new LinkedList<>();
-		linkedList.add("John");
+		linkedList.add("John"); // sonuna ekler...
 		linkedList.add("Barbara");
-		//System.out.println(linkedList);
-		
+		// System.out.println(linkedList);
+
 		Main.printList(linkedList);
 		Main.printList(cars);
-		
+
 		linkedList.remove("John");
 		Main.printList(linkedList);
-		
+
 		System.out.println(linkedList.get(0));
-		
+
 		// Araya eleman ekleme
 		linkedList.add(1, "Robert");
 		Main.printList(linkedList);
-		
+
 	}
 
 }

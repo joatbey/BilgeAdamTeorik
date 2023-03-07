@@ -1,6 +1,7 @@
 package com.dorukbiyikli;
 
 //pojo sınıfı da denir.... klasik düz java classı Plain Old Java Object
+
 public class Kisi { 
 
 	private String ad;

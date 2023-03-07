@@ -19,6 +19,7 @@ public class DaireBaskani extends Personel{
 //		
 		// yukaridaki satırlar yerine üst sınıfın constructorını çağırın:
 		super(ad,soyad, tcKimlik, yas, maas, kidemBilgisi, cepTelNo); // clean code
+		//super();
 		this.setTelSeriNo(telSeriNo);
 		this.setBagliMudurler(bagliMudurler);
 		this.setMakamAdi(makamAdi);

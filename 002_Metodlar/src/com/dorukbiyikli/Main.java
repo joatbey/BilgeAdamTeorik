@@ -9,7 +9,7 @@ public class Main {
 
 	// METODLAR - FONKSİYONLAR
 	//
-	// public => Access modifier(Erişim belirleyici)
+	// Access modifier(Erişim belirleyici)
 	// public: Bütün package'lar kullanılabilir.
 	// protected: Sadece aynı package içi kullanım sağlar.
 	// private : Sadece sınıf içi kullanım sağlar.

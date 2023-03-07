@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Double"/>
-    <fullyQualifiedTypeName name="com.alikaya.YardimciSinif2"/>
-    <fullyQualifiedTypeName name="com.alikaya.YardimciSinif"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenlerTest"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenler"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
@@ -41,13 +38,11 @@
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.repository.entity.Ogretmen"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.controller.OgrenciController"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.repository.OgrenciRepository"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.repository.entity.Ogrenci"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.utility.DataBase"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.MainEnumOrnek.Mevsimler"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
@@ -56,8 +51,13 @@
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.AsiriHizException"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
 </qualifiedTypeNameHistroy>

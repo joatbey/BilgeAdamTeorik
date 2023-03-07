@@ -6,7 +6,7 @@ public class Ogrenci {
 	public String ad; // null bir stringi sysout ile yazdırmaya çalışırsanız exception vermez ekrana null yazar. 
 	public String soyad; // bu stringlerdeki nulla özgü birsey . normalde başka bir objede null bir şeyi yazdırmak istersen exception hatası verir patlar...
 
-	public IletisimBilgileri iletisimBilgileri = new IletisimBilgileri();
+	public IletisimBilgileri iletisimBilgileri = new IletisimBilgileri(); // baska classin objesini yaratıp burada field olarak tutuyorm.
 
 	// sağ tık source generate toString
 	@Override

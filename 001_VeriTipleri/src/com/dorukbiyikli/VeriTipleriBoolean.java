@@ -68,10 +68,13 @@ public class VeriTipleriBoolean {
 			
 			int result = x/y ;
 			System.out.println(result);
+		
+			System.out.println( (float)x/y);
+			
 			int kalan = x & y ;
 			System.out.println(kalan);
 			
-			double res = x/y  ; // eşitliğin sağ tarafı int olacağı için küsürat görünmeyecek iki integeri bölerken int verecek
+			double res =  x/y  ; // eşitliğin sağ tarafı int olacağı için küsürat görünmeyecek iki integeri bölerken int verecek
 								// çözüm1 x ve y 'yi double yapmak
 			double xx = 10;
 			double yy = 3;
