@@ -69,6 +69,7 @@ private OgretmenRepository ogretmenRepository;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Bilgilerini görüntülemek istediğiniz öğretmenin tcKimlikNumarasını giriniz: ");
 		int id = scanner.nextInt();
+		
 		Ogretmen ogretmen = this.ogretmenRepository.findById(id);
 		System.out.println("\nBilgilerini görmek istediğiniz öğretmen: ");
 		System.out.println(ogretmen);

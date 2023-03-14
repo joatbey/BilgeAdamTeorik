@@ -8,6 +8,7 @@ import com.dorukbiyikli.repository.entity.Ogretmen;
 
 public class DataBase {
 	// bunlar databasemiş gibi davranacak şimdilik...
+	
 	public static List<Ogrenci> ogrenciListesi = new ArrayList<Ogrenci>();
 	public static List<Ogretmen> ogretmenListesi = new ArrayList<Ogretmen>();
 

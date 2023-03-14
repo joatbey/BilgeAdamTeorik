@@ -19,7 +19,8 @@ public class Main {
 		int hiz = scanner.nextInt();
 		
 		//Main.hizKontrol(hiz); UNCHECKED EXCEPTIONLARDA JAVA BİZE BIRAKIYOR KONTROLU
-		
+//		Main.hizKontrol(hiz);		// try-checked içine almazsam program çöker.
+
 		try {
 			Main.hizKontrol(hiz);
 		} catch (Exception e) {

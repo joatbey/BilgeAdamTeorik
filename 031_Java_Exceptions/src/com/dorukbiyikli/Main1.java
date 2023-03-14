@@ -51,7 +51,7 @@ public class Main1 {
 		System.out.println("Lütfen bölen sayıyı giriniz...");
 		int bolen = scanner.nextInt();
 		
-		try {
+		try { 
 			int sayi = 25/ bolen;
 			int[] array2 = { 1,2,3,4 };
 			System.out.println(array2[7]);

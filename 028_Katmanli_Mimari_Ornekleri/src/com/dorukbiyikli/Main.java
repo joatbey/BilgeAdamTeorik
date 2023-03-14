@@ -10,11 +10,10 @@ import com.dorukbiyikli.utility.DataBase;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		OgrenciController ogrenciController = new OgrenciController();
 		OgretmenController ogretmenController = new OgretmenController();
 
-		
 		int secim = 0;
 		do {
 			System.out.println("\n******** OKUL BİLGİ SİSTEMİNE HOŞGELDİNİZ **********\n");
@@ -40,18 +39,13 @@ public class Main {
 				// direkt databasee erişmiş oluruz bunu istemiyoruz. Katmanlı mimarinin olayı bu
 				// . bunun boyle olmaması lazım. bakım yapılması falan zor boyle. Dogru yolu bu
 				// değil.
-				
-				ogrenciController.ogrenciEkleme();
-				
-	
 
+				ogrenciController.ogrenciEkleme();
 				break;
 			case 2:
 				ogrenciController.ogrenciSil();
-
 				break;
 			case 3:
-
 				ogrenciController.ogrenciGuncelle();
 				break;
 			case 4:

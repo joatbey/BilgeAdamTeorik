@@ -19,6 +19,8 @@ public class MainDosyayaYazma_02 {
 			// dizine dosya yazdırma
 			fileOutputStream = new FileOutputStream("dosya.txt");
 
+			// ascii kodları : 9
+			
 			fileOutputStream.write(74); // J
 			fileOutputStream.write(65); // A
 			fileOutputStream.write(86); // V
@@ -44,7 +46,7 @@ public class MainDosyayaYazma_02 {
 				System.out.println("Dosya kapatılması sırasında bir hata oluştu.");
 			}
 		}
-		System.out.println("hoşça kalın..");
+		System.out.println("hoşçakalın..");
 
 	}
 

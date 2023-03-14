@@ -26,7 +26,7 @@ public class Main {
 
 			// Dosyanın sonuna ulaşıldığında read() -1 döner
 			int okunan = fileInputStream.read();
-			// System.out.println(okunan);
+			System.out.println(okunan);
 
 		} catch (FileNotFoundException e) {
 			System.out.println("Dosya bulunamadı!");
@@ -101,7 +101,7 @@ public class Main {
 		try {
 			fileInputStream = new FileInputStream("dosya.txt");
 
-			while ((okunan = fileInputStream.read()) != -1) {
+			while ((okunan = fileInputStream.read()) != -1) {// dosya bitince -1 donecek
 				metin = metin + (char) okunan;
 			}
 
@@ -168,8 +168,24 @@ public class Main {
 
 		// dosyadanTekBirByteOkuma();
 		// dosyaninOrtasindanByteOkuma();
+		System.out.println("dosyanın tamamı: \n");
 		dosyaninTumunuOkuma();
+		System.out.println("- - - - -");
 
+		System.out.println("dosyadan tek byte: \n");
+		dosyadanTekBirByteOkuma();
+		System.out.println("- - - - -");
+
+
+		System.out.println("dosyanın ortasından okuma: \n");
+		dosyaninOrtasindanByteOkuma();
+		System.out.println("- - - - -");
+
+
+		System.out.println("dosya 3.den başla 4 karakter oku: \n");
+		dosyaninBelirtilenKisminiOku(3,4);
+		System.out.println("- - - - -");
+		
 		System.out.println("Hoşça kalın");
 
 		// Ödev: Bir metod yazın
@@ -177,8 +193,7 @@ public class Main {
 		// yazdırsın
 		// örn. dosyaninBelirtilenKisminiOku(7,3); // 7. karakterden başlayıp 3 karakter
 		// okur
-		System.out.println("\n- - - - -");
-		dosyaninBelirtilenKisminiOku(23,4);
+		
 	}
 
 }

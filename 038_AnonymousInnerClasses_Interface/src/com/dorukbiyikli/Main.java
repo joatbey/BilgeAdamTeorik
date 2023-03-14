@@ -16,7 +16,8 @@ public class Main {
 			}
 		};
 
-		ucanKaz.uc();
+		ucanKaz.uc(); //Kaz uçuyor..
+
 
 		IUcabilir serce = new IUcabilir() {
 
@@ -27,7 +28,8 @@ public class Main {
 			}
 		};
 
-		serce.uc();
+		serce.uc(); // Serçe uçuyor..
+
 
 	}
 

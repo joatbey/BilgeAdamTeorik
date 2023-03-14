@@ -1,7 +1,7 @@
 package com.dorukbiyikli;
 
 
-public enum UcusTipi {
+public enum EUcusTipi {
 
 	EKONOMIK(100,"ekonomik uçuş"),
 	OZEL(200, "özel uçuş"),
@@ -11,7 +11,7 @@ public enum UcusTipi {
 	int tip;
 	String metin;
 	
-		private UcusTipi(int tip, String metin) {
+		private EUcusTipi(int tip, String metin) {
 		this.tip = tip;
 		this.metin = metin;
 		

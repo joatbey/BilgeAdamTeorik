@@ -17,7 +17,8 @@ public class MainDosyayaYazma_03 {
 		try {
 			// fileOutputStream = new FileOutputStream("C:\\test3\\dosya.txt"); // istediğim
 			// dizine dosya yazdırma
-			fileOutputStream = new FileOutputStream("dosya.txt", true);	// Dosya mevcutsa içeriğini silmez ekleme yapar (append)
+			fileOutputStream = new FileOutputStream("dosya.txt", true);	// Dosya mevcutsa içeriğini silmez ekleme yapar (append) method overloading var burada
+			// cunku dosyaadi ve boolean true ile çağırılan method append 
 			fileOutputStream.write(67); // C
 			fileOutputStream.write(79); // O
 			fileOutputStream.write(68); // D

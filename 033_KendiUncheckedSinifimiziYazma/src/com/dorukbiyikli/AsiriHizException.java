@@ -10,7 +10,7 @@ public class AsiriHizException extends ArithmeticException{
 
 	@Override
 	public void printStackTrace() {
-		System.out.println("Bu bir aşırı hız");
+		System.out.println("Bu bir aşırı hız Unchecked Exception'ıdır. Yüksek hız tespit edildi!");
 	}
 	
 	

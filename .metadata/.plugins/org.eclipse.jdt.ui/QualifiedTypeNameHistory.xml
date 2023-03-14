@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenlerTest"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.SinifStatikDegiskenler"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Anahtar"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Dikdortgen"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.IletisimBilgileri"/>
-    <fullyQualifiedTypeName name="com.alikaya.Paralelkenar"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.OtoGaleri"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Otomobil"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.DaireBaskani"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Sekreter"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Muhendis"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Main"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.INemOlcer"/>
@@ -31,7 +18,6 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthStyleFactory"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Ogrenci"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.util.ListIterator"/>
@@ -50,14 +36,28 @@
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.AsiriHizException"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
-    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.EnumConstantNotPresentException"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.serial.SerialException"/>
+    <fullyQualifiedTypeName name="java.io.InvalidClassException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Ogrenci"/>
+    <fullyQualifiedTypeName name="java.io.EOFException"/>
+    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.io.NotSerializableException"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.Otomobil"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>

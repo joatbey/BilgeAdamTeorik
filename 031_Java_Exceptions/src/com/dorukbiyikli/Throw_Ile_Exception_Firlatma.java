@@ -2,7 +2,9 @@ package com.dorukbiyikli;
 
 import java.util.Scanner;
 
-// throw ile throws farklı...
+// throw ile throws farklı... 
+// throw ile unchecked exception fırlatıyoruz. o yüzden runtimeda oluyor
+
 
 public class Throw_Ile_Exception_Firlatma {
 	
@@ -12,7 +14,7 @@ public class Throw_Ile_Exception_Firlatma {
 		
 		
 		if (hiz > 120) {
-			throw new ArithmeticException(); // şimdilik javanın bi exceptionunu kullanıyoruz. Sonra kendi exception
+			throw new ArithmeticException(); // şimdilik javanın bi exceptionunu kullanıyoruz. Sonra kendi exception	// unchecked exception
 												// sınıfımızı da yazacağız...
 		} else {
 			System.out.println("iyi yolculuklar...");
@@ -35,7 +37,6 @@ public class Throw_Ile_Exception_Firlatma {
 		// bunu...
 		
 		// throw ile atılan exceptionlarda try catch yazmayabilirsiniz ama bu durumda exception yenildiğinde exception çöker...
-
 		try {
 			hizKontrol(hiz);
 		} catch (Exception e) {
