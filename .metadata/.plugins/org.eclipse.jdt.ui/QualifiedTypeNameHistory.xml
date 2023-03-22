@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Muhendis"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Main"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.INemOlcer"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.ITermometre"/>
-    <fullyQualifiedTypeName name="com.dorukbiyikli.Simbo"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.ITarifSınıfGoster"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.ITarihSaatGoster"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Guvercin"/>
@@ -35,7 +30,6 @@
     <fullyQualifiedTypeName name="com.dorukbiyikli.UcusTipi"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.AsiriHizException"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
@@ -57,7 +51,13 @@
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="com.dorukbiyikli.Otomobil"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.ThreadsizListeYazici.ThreadsizListeYazici"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.dorukbiyikli.MultiLockThreadliListeYazici.MultiLockThreadliListeYazici"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

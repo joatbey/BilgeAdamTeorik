@@ -26,6 +26,8 @@ public class Main {
 		listString.add("C#");
 		listString.add("Python");
 		
+
+		
 		for (String s : listString) {
 			System.out.println(s);
 		}
@@ -41,7 +43,7 @@ public class Main {
 		GenericSinif<String> genericSinif2 = new GenericSinif<String>("Hello Java!");
 		System.out.println(genericSinif2.getObj());
 		
-		Kare k  = new Kare(5);
+		Kare k  = new Kare(5); 
 		GenericSinif<Kare>genericSinif3 = new GenericSinif<Kare>(k);
 		int alan = genericSinif3.getObj().alanHesapla();
 		System.out.println("Karenin alanı: " + alan);

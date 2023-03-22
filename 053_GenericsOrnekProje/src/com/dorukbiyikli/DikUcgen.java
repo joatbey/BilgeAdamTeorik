@@ -14,7 +14,6 @@ public class DikUcgen extends Sekil{
 
 	@Override
 	public int alanHesapla() {
-		// TODO Auto-generated method stub
 		return ((kenar1*kenar2)/2);
 	}
 

@@ -13,7 +13,6 @@ public class Dikdortgen extends Sekil {
 
 	@Override
 	public int alanHesapla() {
-		// TODO Auto-generated method stub
 		return uzunKenar * kisaKenar;
 	}
 
